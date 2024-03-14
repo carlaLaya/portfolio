@@ -14,24 +14,20 @@ h5 {
 .navegacion-header {
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: rgb(40, 40, 40);
-
 }
 .navegacion-header nav ul {
-  list-style: none;
   display: flex;
-  margin: 20px;
+  margin: 10px;
 }
 .navegacion-header nav ul li a {
   color: #fff;
-  margin: 12px;
+  margin: 2px;
   font-weight: 400;
   transition: 0.5s;
   text-decoration: none;
 }
-.navegacion-header nav ul :hover{
-  color: #ff5080;
+.navegacion-header nav ul li:hover {
   font-weight: 900;
   font-size: large;
 }
@@ -39,7 +35,7 @@ h5 {
   color: #fc1653;
   margin: 10px;
 }
-.redes :hover{
+.redes :hover {
   background-color: #ff5080;
 }
 .redes a {
@@ -132,12 +128,9 @@ p {
 }
 .fila {
   display: flex;
-  justify-content: center;
-  max-width: 1150px;
   margin: 30px auto;
 }
 .servicio {
-  max-width: 350px;
   background-color: #fff;
   padding: 40px;
   margin: 0 5px;
@@ -170,13 +163,9 @@ ul {
 }
 .contenedor-skills {
   background-color: white;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
   color: #161616;
-  background-position: center center;
   padding: 50px 100px;
-  text-align: center;
+  
 }
 .contenedor-skills .skill {
   max-width: 600px;
@@ -203,7 +192,7 @@ ul {
   gap: 2rem;
   flex-wrap: wrap;
 }
-.portfolio{
+.portfolio {
   padding: 100px 100px;
   text-align: center;
   background-color: #f3f3f3;
@@ -226,9 +215,7 @@ article button {
   font-size: 1rem;
   cursor: pointer;
   text-decoration: none;
-  
 }
-
 
 #contacto {
   padding: 5px 5px;
@@ -248,3 +235,26 @@ article button {
   width: 30%;
   border-radius: 40px;
 }*/
+
+@media screen and (max-width:480px){
+  img{
+    padding: 200px;
+    width: 50%;
+    border-radius: 20px;
+
+  }
+  .fila {
+    width: 100%;
+    flex-direction: column;
+    border-radius: 0rem;
+  }
+    .info{
+      justify-content: center;
+      text-align: start;
+    }
+    .info{
+    color: #fc1653;
+  }
+}
+  
+
