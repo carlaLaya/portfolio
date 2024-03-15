@@ -11,25 +11,10 @@ h5 {
   margin: 50px;
   padding: 50px;
 }
-.navegacion-header {
-  display: flex;
-  justify-content: center;
-  background-color: rgb(40, 40, 40);
-}
-.navegacion-header nav ul {
-  display: flex;
-  margin: 10px;
-}
-.navegacion-header nav ul li a {
-  color: #fff;
-  margin: 2px;
-  font-weight: 400;
-  transition: 0.5s;
-  text-decoration: none;
-}
-.navegacion-header nav ul li:hover {
+li :hover {
   font-weight: 900;
   font-size: large;
+  color: #ff5080;
 }
 .redes {
   color: #fc1653;
@@ -207,23 +192,22 @@ article {
   padding: 2rem;
 }
 article button {
-  background: #ff5080;
+  background-color: #eba7b9;
   color: white;
-  padding: 0.1rem;
   border: none;
   border-radius: 1rem;
-  font-size: 1rem;
   cursor: pointer;
-  text-decoration: none;
 }
-
+article button:hover{
+  background-color: #ff5080;
+}
 #contacto {
   padding: 5px 5px;
   text-align: center;
   background-color: rgb(40, 40, 40);
   color: white;
   font-weight: 300;
-}
+ ñl}
 
 @media screen and (max-width:480px){
   img{
