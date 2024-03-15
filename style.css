@@ -225,17 +225,6 @@ article button {
   font-weight: 300;
 }
 
-/*.button {
-  border: none;
-  outline: 0;
-  padding: 8px;
-  color: white;
-  background-color: #ff5080;
-  text-align: center;
-  width: 30%;
-  border-radius: 40px;
-}*/
-
 @media screen and (max-width:480px){
   img{
     padding: 200px;
