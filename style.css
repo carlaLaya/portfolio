@@ -112,10 +112,9 @@ p {
 
   }
 
-
 .fila {
   display: flex;
-  margin: 10px auto;
+  margin: 0px auto;
 }
 .servicio {
   background-color: #fff;
@@ -224,14 +223,21 @@ article button:hover{
     display: none;
   }
   .fila {
-    width: 100%;
     flex-direction: column;
     border-radius: 0rem;
+    display: flex;
+    margin: 0 0 0 0px; 
   }
+.servicio{
+  margin: 0 0 0 0px;
+  width: 100%;
+}
+
+ 
     .info{
       justify-content: center;
       text-align: start;
-      color: var(--color);
+      color: black;
 
     }
     .contenedor-foto{
@@ -251,16 +257,23 @@ display: none;
   text-align: center;
 }
 .progress-bar{
-width: 50px;
+width: 0px;
+margin: 0%;
 }
 .info{
 width: 200px;
+letter-spacing: 0.2em;
 }
 article button{
   background-color: var(--color);
   color: #101011;
   width: 150px;
 }
+.skills{
+  margin: 0 0px;
+  color: #ff5080;
+}
+
 }
   
 
