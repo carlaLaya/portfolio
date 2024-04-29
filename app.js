@@ -18,6 +18,10 @@ document.getElementById("Proyecto_nasa").addEventListener("click", function Proy
     window.location.href  = "https://carlalaya.github.io/ProyectoNASA_API/"
 });
 
+document.getElementById("tienda_germina").addEventListener("click", function tienda_germina() {
+    window.location.href  = "https://carlalaya.github.io/Prueba_carrito-de-compras/"
+});
+
 
 
 
