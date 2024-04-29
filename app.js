@@ -14,6 +14,9 @@ document.getElementById("encriptarTexto").addEventListener("click", function lin
 document.getElementById("calculadora").addEventListener("click", function calcular() {
     window.location.href  = "https://carlalaya.github.io/Calculadora/"
 });
+document.getElementById("Proyecto_nasa").addEventListener("click", function Proyecto_nasa() {
+    window.location.href  = "https://carlalaya.github.io/ProyectoNASA_API/"
+});
 
 
 

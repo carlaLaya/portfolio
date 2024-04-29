@@ -217,10 +217,11 @@ article button:hover{
 
 @media screen and (max-width:480px){
   img{
-    padding: 200px;
-    width: 50%;
-    border-radius: 20px;
+
     display: none;
+  }
+  .sobremi{
+    text-align: center;
   }
   .fila {
     flex-direction: column;
