@@ -556,12 +556,13 @@ body {
 .portfolio-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 50px;
+  gap: 10px;
 }
 
 .portfolio-item {
   background-color: var(--color-suave);
   padding: 40px;
+  margin: 30px;
   text-align: center;
   box-shadow: 0 10px 20px rgba(212, 143, 24, 0.1);
   border-radius: 12px;
@@ -655,7 +656,11 @@ body {
   color: var(--color-primario);
   transition: color 0.3s ease-in-out;
 }
-
+@media (max-width: 991px) {
+  .portfolio-item {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
 /* Footer */
 #contacto {
   color: var(--color-primario);
