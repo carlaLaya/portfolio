@@ -18,9 +18,12 @@ body {
   width: 100%;
   z-index: 1000;
   animation: fadeIn 1s ease-in-out;
-  color: var(--color-suave);
 }
-
+.navegacion-header a{
+  color: var(--color-primario);
+  font-weight: 600;
+  
+}
 
 /* Sección de presentación */
 .presentacion {
@@ -28,6 +31,7 @@ body {
   padding: 150px 0;
   text-align: center;
   animation: fadeInUp 1s ease-in-out;
+  color: var(--color-suave);
 }
 
 .presentacion h3 {
@@ -38,10 +42,8 @@ body {
   transform: translateY(20px);
   animation: fadeInDown 0.8s ease-in-out forwards;
 }
-
 .presentacion h3 span {
   color: var(--color-primario);
-  transition: color 0.3s ease-in-out;
 }
 
 .presentacion h3:hover span {
@@ -55,6 +57,8 @@ body {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.8s ease-in-out 0.2s forwards;
+  color: var(--color-suave);
+
 }
 
 .presentacion .redes {
@@ -105,6 +109,7 @@ body {
   padding: 80px 0;
   animation: fadeInUp 1s ease-in-out;
   background-color: #eeca89;
+  text-align: justify;
 }
 
 .contenedor-foto {
@@ -135,8 +140,8 @@ body {
   font-weight: bold;
   color: var(--color-primario);
   margin-bottom: 20px;
-  position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+  text-align: start;
 }
 
 .sobremi .titulo-seccion::after {
@@ -144,7 +149,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 50px;
+  width: 100%;
   height: 2px;
   background-color: #0b0b0b;
   transition: width 0.3s ease-in-out;
@@ -199,6 +204,17 @@ body {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInDown 0.8s ease-in-out forwards;
+  color: var(--color-suave);
+}
+.titulo-seccion_habilidades{
+  color: var(--color-primario);
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInDown 0.8s ease-in-out forwards;
 }
 
 .fila {
@@ -222,11 +238,11 @@ body {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.servicio:nth-child(2) {
+.servicio:nth-child(3) {
   animation-delay: 0.2s;
 }
 
-.servicio:nth-child(3) {
+.servicio:nth-child(4) {
   animation-delay: 0.4s;
 }
 
@@ -289,32 +305,6 @@ body {
 .servicio:hover a {
   color: var(--color-primario);
 }
-
-/* RESPONSIVO*/
-
-@media (max-width: 991px) {
-  .servicio {
-    flex: 0 0 calc(50% - 20px);
-    max-width: calc(50% - 20px);
-  }
-}
-
-@media (max-width: 767px) {
-  .servicio {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
-
-
-
-@media (max-width: 767px) {
-  .servicio {
-    flex: 0 0 100%;
-    max-width: 60%;
-  }
-}
-
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -346,6 +336,32 @@ body {
     transform: translateY(0);
   }
 }
+/* RESPONSIVO*/
+
+@media (max-width: 991px) {
+  .servicio {
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 767px) {
+  .servicio {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  .servicio {
+    flex: 0 0 100%;
+    max-width: 60%;
+  }
+}
+
+
 
 /* Sección "Habilidades" */
 
@@ -378,35 +394,35 @@ body {
 }
 
 .skill:nth-child(2) {
-  animation-delay: 0.2s;
+  animation-delay: 0.5s;
 }
 
 .skill:nth-child(3) {
-  animation-delay: 0.4s;
+  animation-delay: 2s;
 }
 
 .skill:nth-child(4) {
-  animation-delay: 0.6s;
+  animation-delay: 3s;
 }
 
 .skill:nth-child(5) {
-  animation-delay: 0.8s;
+  animation-delay: 3.5s;
 }
 
 .skill:nth-child(6) {
-  animation-delay: 1s;
+  animation-delay: 4s;
 }
 
 .skill:nth-child(7) {
-  animation-delay: 1.2s;
+  animation-delay: 4.5s;
 }
 
 .skill:nth-child(8) {
-  animation-delay: 1.4s;
+  animation-delay: 5s;
 }
 
 .skill:nth-child(9) {
-  animation-delay: 1.6s;
+  animation-delay: 5.5s;
 }
 
 .info {
@@ -442,6 +458,28 @@ body {
   animation: fadeIn 0.5s ease-in-out 0.5s forwards;
   opacity: 0;
 }
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /*RESPONSIVO */
 
 @media (max-width: 991px) {
@@ -469,27 +507,6 @@ body {
   }
 }
 
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 
 /* Animaciones */
 
