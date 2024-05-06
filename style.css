@@ -5,20 +5,22 @@ body {
   padding: 0;
 }
 :root {
-  --color-primario: #ED4264;
-  --color-secundario: #FFEDBC;
+  --color-primario:  #f6a919;
+  --color-suave: #eeca89;
+  --color-secundario: black;
 }
 /* Sección de navegación */
 .navegacion-header {
-  background-color:var(--color-secundario);
+  background-color:var(--color-primario);
   padding: 10px 0;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
   animation: fadeIn 1s ease-in-out;
-  color: var(--color-primario);
+  color: var(--color-suave);
 }
+
 
 /* Sección de presentación */
 .presentacion {
@@ -102,6 +104,7 @@ body {
   align-items: center;
   padding: 80px 0;
   animation: fadeInUp 1s ease-in-out;
+  background-color: #eeca89;
 }
 
 .contenedor-foto {
@@ -183,7 +186,7 @@ body {
 
 /* Sección "Servicios" */
 #servicios {
-  background-color: var(--color-secundario);
+  background-color: black;
   padding: 80px 0;
   animation: fadeInUp 1s ease-in-out;
 }
@@ -206,7 +209,7 @@ body {
 }
 
 .servicio {
-  background-color: white;
+  background-color: var(--color-suave);
   padding: 30px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -347,7 +350,7 @@ body {
 /* Sección "Habilidades" */
 
 #habilidades {
-  background-color: white;
+  background-color: var(--color-suave);
   padding: 80px 0;
   animation: fadeInUp 1s ease-in-out;
 }
@@ -557,10 +560,10 @@ body {
 }
 
 .portfolio-item {
-  background-color: white;
+  background-color: var(--color-suave);
   padding: 40px;
   text-align: center;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(212, 143, 24, 0.1);
   border-radius: 12px;
   opacity: 0;
   transform: translateY(20px);
@@ -599,7 +602,7 @@ body {
 
 .portfolio-item:hover {
   transform: translateY(-15px);
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 15px 25px var(--color-suave);
   background-color: #f9f9f9;
 }
 
