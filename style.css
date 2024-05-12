@@ -390,39 +390,42 @@ body {
   margin-bottom: 30px;
   opacity: 0;
   transform: translateX(-20px);
-  animation: fadeInLeft 0.8s ease-in-out forwards;
+  animation: fadeInLeft 0.5s ease-in-out forwards;
 }
 
-.skill:nth-child(2) {
+.skill:nth-child(1) {
   animation-delay: 0.5s;
 }
 
-.skill:nth-child(3) {
+.skill:nth-child(2) {
   animation-delay: 2s;
 }
 
-.skill:nth-child(4) {
+.skill:nth-child(3) {
   animation-delay: 3s;
 }
 
-.skill:nth-child(5) {
+.skill:nth-child(4) {
   animation-delay: 3.5s;
 }
 
-.skill:nth-child(6) {
+.skill:nth-child(5) {
   animation-delay: 4s;
 }
 
-.skill:nth-child(7) {
+.skill:nth-child(6) {
   animation-delay: 4.5s;
 }
 
-.skill:nth-child(8) {
+.skill:nth-child(7) {
   animation-delay: 5s;
 }
 
-.skill:nth-child(9) {
+.skill:nth-child(8) {
   animation-delay: 5.5s;
+}
+.skill:nth-child(9) {
+  animation-delay: 6s;
 }
 
 .info {
