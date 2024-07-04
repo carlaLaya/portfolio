@@ -572,7 +572,7 @@ body {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInDown 0.8s ease-in-out forwards;
-  color: var(--color-secundario);
+  color: var(--color-primario);
   position: relative;
 }
 
